@@ -1,5 +1,8 @@
+import '../pages/index.css';
+import { initialCards, renderInitialCards } from './cards.js';
+
 // 1. Шесть карточек «из коробки»
-function createCard (cardData) {
+export function createCard (cardData) {
     const cardTemplate = document.querySelector('#card-template').content
     const cardElement = cardTemplate.cloneNode(true)
 
@@ -62,16 +65,6 @@ allPopups.forEach(popup => {
 });
 
 imagePopup.querySelector('.popup__close').addEventListener('click', () => closeModal(imagePopup))
-
-function renderinitialCards () {
-    const placesList = document.querySelector('.places__list')
-    initialCards.forEach(cardData => {
-        const cardElement = createCard(cardData)
-        placesList.appendChild(cardElement)
-    })
-}
-
-renderinitialCards()
 
 // 2.1. Форма редактирования профиля пользователя
 const editButton = document.querySelector('.profile__edit-button')
@@ -247,3 +240,5 @@ function handleEscapeKey(evt) {
         }
     }
 }
+
+renderInitialCards();
