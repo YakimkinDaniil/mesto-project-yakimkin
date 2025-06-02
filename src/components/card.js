@@ -58,6 +58,7 @@ export const initialCards = [
     }
 ];
 
+// Отображает начальные карточки на странице
 export function renderInitialCards(handleCardClick) {
   const placesList = document.querySelector('.places__list');
   initialCards.forEach(cardData => {

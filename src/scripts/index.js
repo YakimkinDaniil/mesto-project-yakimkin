@@ -98,7 +98,7 @@ const validationSettings = {
   submitButtonSelector: '.popup__button',
   inactiveButtonClass: 'popup__button_disabled',
   inputErrorClass: 'popup__input_type_error',
-  errorClass: 'popup__error_visible' // Должен совпадать с CSS
+  errorClass: 'popup__error_visible'
 };
 
 enableValidation(validationSettings);
