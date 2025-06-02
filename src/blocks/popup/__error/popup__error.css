@@ -1,9 +1,26 @@
 .popup__error {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    color: #FF0000;
-    display: block;
+  font-family: 'Inter', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF0000;
+  display: none;
+  margin-top: 5px;
+  min-height: 15px;
+}
+
+.popup__error_visible {
+  display: block;
+}
+
+.popup__input_type_error {
+  border-bottom: 1px solid #FF0000;
+}
+
+.popup__button_disabled {
+  background-color: #E5E5E5;
+  color: #000000;
+  opacity: 0.2;
+  cursor: default;
 }
